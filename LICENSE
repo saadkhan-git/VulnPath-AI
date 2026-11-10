@@ -1,0 +1,24 @@
+Proprietary and Confidential (Draft)
+
+Copyright (c) 2026 Mohammad Saad Khan
+GitHub: https://github.com/saadkhan-git
+All rights reserved.
+
+Product: VulnPath AI
+Tagline: "Trace the path. Fix the flaw."
+
+This software and its associated documentation, source code, detection algorithms, 
+user interface designs, and test suites are the intellectual property of Mohammad Saad Khan.
+
+DISCLAIMER & NOTICE OF CLEAN-ROOM STATUS:
+1. This is a draft proprietary license authored by Mohammad Saad Khan. It has not received formal legal approval and does not constitute formal legal counsel.
+2. VulnPath AI is an independently authored, clean-room software application built from original specifications, public standards (OWASP, CWE, SARIF 2.1.0), and official language documentation.
+3. No rights, licenses, or permissions to copy, modify, distribute, sublicense, reverse-engineer, or commercially exploit this software are granted to any third party without explicit prior written authorization from Mohammad Saad Khan.
+4. Third-party open-source components used by this software are subject to their respective upstream licenses as detailed in the THIRD_PARTY_NOTICES file.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,35 @@
+# VulnPath AI — Custom Python Security Rules Pack
+# Clean-Room Original Security Heuristics authored by Mohammad Saad Khan
+
+rules:
+  - id: VP-SEC-001
+    cwe: CWE-377
+    title: Insecure Temporary File Creation
+    severity: high
+    confidence: 0.95
+    description: "mktemp() creates an insecure temporary file subject to race condition attacks (TOCTOU)."
+    remediation: "Use tempfile.NamedTemporaryFile() or tempfile.TemporaryDirectory() instead."
+    patterns:
+      function_calls:
+        - "mktemp"
+
+  - id: VP-SEC-002
+    cwe: CWE-918
+    title: Potential Server-Side Request Forgery (SSRF)
+    severity: high
+    confidence: 0.85
+    description: "HTTP request dispatched without URL domain allowlist verification."
+    remediation: "Validate destination URLs against a strict allowlist of permitted hosts and protocols."
+    patterns:
+      regex: "requests\\.(get|post|put|delete)\\s*\\(\\s*[a-zA-Z0-9_]+"
+
+  - id: VP-SEC-003
+    cwe: CWE-611
+    title: Insecure XML Parsing (XXE)
+    severity: medium
+    confidence: 0.90
+    description: "Standard XML parsers may resolve untrusted external entity declarations."
+    remediation: "Use defusedxml or disable external entity resolution (resolve_entities=False)."
+    patterns:
+      function_calls:
+        - "parse"
